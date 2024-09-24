@@ -45,4 +45,5 @@ ionic serve
 
 ## Funcionalidades
 Pesquisa de livros utilizando a API do Google Books.
+
 Visualização de capas e resumos dos livros.

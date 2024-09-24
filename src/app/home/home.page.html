@@ -1,0 +1,21 @@
+
+<ion-content class="ion-padding">
+  <div class="search-container">
+    <ion-item class="custom-input">
+      <ion-label position="floating">Digite o nome do livro</ion-label>
+      <ion-input [(ngModel)]="bookName"></ion-input>
+    </ion-item>
+    <ion-button expand="full" (click)="getBook()" class="custom-button">Buscar</ion-button>
+  </div>
+
+  <div *ngIf="bookSummary" class="book-container">
+    <div *ngIf="bookCover" class="book-cover-container">
+      <img [src]="bookCover" alt="Capa do livro" class="book-cover"/>
+    </div>
+
+    <div class="book-info">
+      <h2>Resumo do Livro</h2>
+      <p>{{ bookSummary }}</p>
+    </div>
+  </div>
+</ion-content>
